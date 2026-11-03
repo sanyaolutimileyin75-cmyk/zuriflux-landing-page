@@ -1,22 +1,22 @@
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-[#04140E] text-white py-12 lg:py-16 px-6 md:px-12 lg:px-[76px] border-t border-white/5">
+    <footer id="contact" className="bg-[#04140E] text-white py-12 sm:py-14 lg:py-16 px-4 sm:px-6 md:px-12 lg:px-[76px] border-t border-white/5">
       <div className="max-w-[1440px] mx-auto">
         
-        {/* Top Section: Grid Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12">
+        {/* Top Section: Grid Columns (2 columns on mobile/tablet, 4 on desktop) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 pb-10 sm:pb-12">
 
           {/* Column 1: Brand & Bio */}
-          <div className="space-y-4">
+          <div className="space-y-3.5 sm:space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="text-2xl font-bold tracking-tight text-white">
               Zuri<span className="text-[#22D3EE]">Flux</span>
             </div>
-            <p className="text-[13px] text-white/50 leading-relaxed max-w-[260px]">
+            <p className="text-[13px] text-white/50 leading-relaxed max-w-[280px]">
               Smart waste management for the cities of tomorrow. IoT-powered. Data-driven. Built for impact.
             </p>
             
             {/* Social Buttons */}
-            <div className="flex items-center gap-2 pt-2">
+            <div className="flex items-center gap-2.5 pt-1">
               {/* LinkedIn */}
               <a
                 href="#"
@@ -39,7 +39,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              {/* Camera Icon (Fixed) */}
+              {/* Camera Icon */}
               <a
                 href="#"
                 className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
@@ -55,50 +55,50 @@ const Footer = () => {
 
           {/* Column 2: Platform */}
           <div>
-            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-5">
+            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-4 sm:mb-5">
               Platform
             </h4>
-            <ul className="space-y-3 text-[13px] text-white/50">
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">IoT Sensors</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Analytics Engine</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Route Optimization</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Citizen App</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Integrations</a></li>
+            <ul className="space-y-2.5 sm:space-y-3 text-[13px] text-white/50">
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">IoT Sensors</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Analytics Engine</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Route Optimization</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Citizen App</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Integrations</a></li>
             </ul>
           </div>
 
           {/* Column 3: Company */}
           <div>
-            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-5">
+            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-4 sm:mb-5">
               Company
             </h4>
-            <ul className="space-y-3 text-[13px] text-white/50">
-              <li><a href="#about" className="hover:text-[#22D3EE] transition-colors">About ZuriFlux</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Our Mission</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Press Kit</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Blog</a></li>
+            <ul className="space-y-2.5 sm:space-y-3 text-[13px] text-white/50">
+              <li><a href="#about" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">About ZuriFlux</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Our Mission</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Careers</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Press Kit</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Blog</a></li>
             </ul>
           </div>
 
           {/* Column 4: Contact */}
           <div>
-            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-5">
+            <h4 className="text-[11px] font-bold tracking-[0.18em] text-white uppercase mb-4 sm:mb-5">
               Contact
             </h4>
-            <ul className="space-y-3 text-[13px] text-white/50">
-              <li><a href="mailto:hello@zuriflux.io" className="hover:text-[#22D3EE] transition-colors">hello@zuriflux.io</a></li>
+            <ul className="space-y-2.5 sm:space-y-3 text-[13px] text-white/50">
+              <li><a href="mailto:hello@zuriflux.io" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">hello@zuriflux.io</a></li>
               <li>+234 700 000 0000</li>
               <li>Lagos, Nigeria</li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Request a Demo</a></li>
-              <li><a href="#" className="hover:text-[#22D3EE] transition-colors">Partnership Enquiries</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Request a Demo</a></li>
+              <li><a href="#" className="hover:text-[#22D3EE] transition-colors inline-block py-0.5">Partnership Enquiries</a></li>
             </ul>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-white/40">
+        <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] sm:text-[12px] text-white/40 text-center sm:text-left">
           <span>© 2026 ZuriFlux Technologies Ltd. All rights reserved.</span>
           <span>Made with purpose for sustainable cities</span>
         </div>

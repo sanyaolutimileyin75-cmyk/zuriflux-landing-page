@@ -33,7 +33,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="bg-[#0A1F14] text-white py-16 sm:py-20 lg:py-[72px] px-4 sm:px-6 lg:px-6">
+    <section className="bg-[#0A1F14] text-white py-16 sm:py-20 lg:py-[72px] px-4 sm:px-6 lg:px-[76px]">
       <div className="max-w-[1440px] mx-auto">
 
         {/* Section Header */}
@@ -41,7 +41,7 @@ const HowItWorks = () => {
           <p className="text-[#22D3EE] text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase mb-3 sm:mb-4">
             HOW IT WORKS
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold tracking-tight text-white leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold tracking-tight text-white leading-tight max-w-3xl mx-auto px-2">
             From Overflow to Intelligence in 4 Steps
           </h2>
         </div>
@@ -53,9 +53,9 @@ const HowItWorks = () => {
             return (
               <div
                 key={step.id}
-                className="relative flex flex-col items-center text-center px-2"
+                className="relative flex flex-col items-center text-center px-2 sm:px-3"
               >
-                {/* Top Icon (cyan) */}
+                {/* Top Icon */}
                 <div className="mb-4 text-[#22D3EE]">
                   <Icon size={22} strokeWidth={1.8} />
                 </div>
@@ -73,7 +73,7 @@ const HowItWorks = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-slate-400 text-[13px] sm:text-sm leading-relaxed max-w-[260px]">
+                <p className="text-slate-400 text-[13px] sm:text-sm leading-relaxed max-w-[260px] mx-auto">
                   {step.description}
                 </p>
               </div>
